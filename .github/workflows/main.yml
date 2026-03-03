@@ -67,7 +67,7 @@ jobs:
             - uses: actions/checkout@v2
             - uses: actions/setup-python@v2
               with:
-                  python-version: "3.14"
+                  python-version: "3.13"
 
             - run: python -m pip install black==19.10b0 click==8.0.4
             - run: black --safe --check --diff .
@@ -82,7 +82,7 @@ jobs:
             - uses: actions/checkout@v2
             - uses: actions/setup-python@v2
               with:
-                  python-version: "3.14"
+                  python-version: "3.13"
 
             - run: python -m pip install flake8==3.3.0
             - run: flake8 --config=.flake8 .
@@ -97,7 +97,7 @@ jobs:
             - uses: actions/checkout@v2
             - uses: actions/setup-python@v2
               with:
-                  python-version: "3.14"
+                  python-version: "3.13"
 
             - run: python -m pip install isort[pyproject]==4.3.21
             - run: isort -rc --check-only .
